@@ -4,46 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <title>WD3</title>
+    <title>Document</title>
+    <style>
+        a {display: block;}
+    </style>
 </head>
-<header>
-    <h1>Paul Humphreys Engineering</h1>
-</header>
-<body>
-    <form>
-        <fieldset>
-            <div>
-                <label for="Fname">First Name:</label>   
-                <input type="text" id="firstname" name="firstname" placeholder="Enter Here" pattern="[a-zA-Z]{2,}" onkeyup="validation()">
-                <div id="errorFname" class="errorF"> Please Insert Name</div>
-            </div>
-            <div>
-                <label for="Lname">Last Name:</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Enter Here" pattern="[a-zA-Z]{2,}" onkeyup="validation1()">
-                <div id="errorLname" class="errorL"> Please Insert Name</div>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="emails" name="email" placeholder="Enter Here" pattern="[a-z0-9._%+-]{3,}@[a-z]{3,}([.]{1}[a-z]{2,}|[.]{1}[a-z]{2,}[.]{1}[a-z]{2,})" onkeyup="valadation2()">
-                <div id="erroremail" class="erroremail">Enter a Valid Email</div>
-            </div>
-            <div>
-                <label for="ContactInfo">Contact Information:</label>
-                <input type="text" id="ContactInfo" name="contact" placeholder="Enter Here" pattern="[0-9]{2,0}" onchange="valadation3()">
-                <div id="errorContactInfo" class="ContactInfo">Enter Valid Information</div>
-            </div>
-            <div>
-                <lable for="Button"></lable>
-                <input type="submit" id="Button" name="submit"onchange="valadation4()">
-                <div id="errorsubmit" class="Submit">Entered Values above are Incorrect</div>
-            </div>
-        </fieldset>
-    </form>
-<h1> Hayden has edited this</h1>
-</body>
-<footer>
 
-</footer>
+<body>
+    <a href="https://AnnaLiaRose1.github.io" target="_blank">talia</a>
+    <a href="https://dhastaylor.github.io" target="_blank">dianna</a>
+    <a href="https://EmilyMeek.github.io" target="_blank">emily</a>
+    <a href="https://HBlomfield.github.io" target="_blank">i don't know</a>
+    <a href="https://lucasheydon.github.io" target="_blank">lucas</a>
+    <a href="https://Luigi3069.github.io" target="_blank">Cammo</a>
+    <a href="https://minmaem.github.io" target="_blank">minmae</a>
+    <a href="https://rebeccva.github.io" target="_blank">becE</a>
+    <a href="https://seph86.github.io" target="_blank">mitchM</a>
+    <a href="https://nimafaghihzadeh.github.io" target="_blank">nima</a>
+    <a href="https://BeccAYYY.github.io" target="_blank">beca</a>
+    <a href="https://Kaiabbey.github.io" target="_blank">kai</a>
+    <a href="https://cb91-dev.github.io" target="_blank">craig</a>
+    <a href="https://mooker97.github.io" target="_blank">mike</a>
+    <div>
+        <button onclick="openAll()">openall</button>
+    </div>
+    <script>
+        function openAll() {
+            var allLinks = document.getElementsByTagName('a');
+            for (i=0;i<allLinks.length;i++) {
+                window.open(allLinks[i].href);
+            }
+        }
+    </script>
 </html>
