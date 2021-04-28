@@ -6,39 +6,97 @@
         <link rel="stylesheet" type="text/css" href="./PHEM.css">
         <script src="./PHEM.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-        <title>Home</title>
+        <title>Paul Humperys</title>
     </head>
     <body>
         <header></header>
+        <div class="mobile">
+            <h1> Contact Paul:</h1>
+            <fieldset class="page">
+                <legend> Contact Paul:</legend>
 
-        <div class="box" onclick="swapBoxes()" id="Firstname">
-            <i class="fas fa-camera" id="camera"></i>
-        </div>
-        <div class="box" onclick="swapBoxes()" id="Lastname">
-            <i class="fas fa-camera" id="camera"></i>
-        </div>
-        <div class="box" onclick="swapBoxes()" id="Email">
-            <i class="fab fa-accessible-icon" id="wheelchair"></i>
-        </div>
-        <div class="box" onclick="swapBoxes()" id="Phone">
-            <i class="fab fa-accessible-icon" id="wheelchair"></i>
-        </div>
-        <div class="box" onclick="swapBoxes()" id="Subject">
-            <i class="fab fa-accessible-icon" id="wheelchair"></i>
-        </div>
-        <div class="box" onclick="swapBoxes()" id="Message">
-            <i class="fab fa-accessible-icon" id="wheelchair"></i>
-        </div>
-        <div>
-            <input type="checkbox" id="alien" checked></input>
-            <label for="checkbox"class="fas fa-alien" id="ET"></label>
-        </div>
-        <div class="send">
-            <input type="button">
-                <i class="fas fa-ambulance" id="taxi"></i>
-            </input>
-        </div>
+                <label for="Firstname">
+                    <p>
+                        Firstname:
+                    </p>
+                </label>
+                <div class="form" id="Firstname">
+                    <input type="text" placeholder="Firstname" name="Firstname">
+                        <i class="fas fa-ambulance" id="taxi"></i>
+                    </input>
+                </div>
 
+                <label for="Lastname">
+                    <p>
+                        Lastname:
+                    </p>
+                </label>
+                <div class="form" id="Lastname">
+                    <input type="text" placeholder="Lastname" name="Lastname">
+                        <i class="fas fa-ambulance" id="taxi"></i>
+                    </input>
+                </div>
+
+                <label for="Email">
+                    <p>
+                        Email:
+                    </p>
+                </label>
+                <div class="form" id="Email">
+                    <input type="text" placeholder="Email" name="Email">
+                        <i class="fas fa-ambulance" id="taxi"></i>
+                    </input>
+                </div>
+
+                <label for="Phone">
+                    <p>
+                        Phone:
+                    </p>
+                </label>
+                <div class="form" id="Phone">
+                    <input type="text" placeholder="Phone" name="Phone">
+                        <i class="fas fa-ambulance" id="taxi"></i>
+                    </input>
+                </div>
+
+                <label for="Subject">
+                    <p>
+                        Subject:
+                    </p>
+                </label>
+                <div class="form" id="Subject">
+                    <input type="text" placeholder="Subject" name="Subject">
+                        <i class="fas fa-ambulance" id="taxi"></i>
+                    </input>
+                </div>
+
+                <!-- <ul> 
+                    <li><a href='./index.html#' accesskey="h">Home</a></li>
+                    <li><a href='./book_photoshoot.html#' accesskey="b">Photoshoot Bookings</a></li>          
+                    <li><a href='./contact_us.html#' accesskey="c">Contact us</a></li>
+                    <li><a href='./gallery.html#' accesskey="g">Client Gallery</a></li>
+                    <li><a href='./work_pricing.html#' accesskey="q">Job Quotes</a></li>
+                </ul>  -->
+
+                <label for="Message">
+                    <p>
+                        Message:
+                    </p>
+                </label>
+                <div class="form" id="Message">
+                    <input type="text" placeholder="Message" name="Message">
+                        <i class="fas fa-ambulance" id="taxi"></i>
+                    </input>
+                </div>
+
+                <p></p>
+
+                <input type="button" value="Send" name="Send" id="Send">
+                </input>
+
+
+            </fieldset>
+        </div>
 
     </body>    
 </html>
