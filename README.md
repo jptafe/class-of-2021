@@ -1,1 +1,1 @@
-Get REkt
+Get REkt noob
