@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ 
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Porter</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="brand"><span>P</span>orter</h1>
+            <img src="12.svg" class="logo" alt="company-logo">
+        </header>
+        <div class="wrapper">
+            <div class="company-info">
+                <h3>Porter</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i>44 Something st</li>
+                    <li><i class="fa fa-phone"></i>(555) 555-5555</li>
+                    <li><i class="fa fa-envelope"></i>test@porter.com</li>
+                    <li>ABN 25 25 185 </li>
+                    <li><i class="fa fa-video"></i>Help Me</li>
+                </ul>
+                <video id="showVid" class="video" width="320"
+                    height="260" controls>
+                    <source src="cair.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="contact">
+                <form id="form1" method="POST">
+                    <p>Be apart of somthing great join today </p>
+                    <fieldset>
+                        <legend><span>P</span>orter membership:</legend>
+
+                        <label for="firstName">First Name
+                            <span class="required">Required</span>
+                        </label>
+                        <div class="input-icons">
+                        <input id="firstName" type="text" required name="firstName" pattern="[A-Za-z]{2-20}"
+                            title="First Name is letters - space ' only" placeholder="First Name"
+                            oninput="checkName(this)">
+                            <i class="fa fa-user icon">
+                            </i>
+                        </div>
+                        
+                            
+
+
+                        <label for="lastName">Last Name
+                            <span class="required">Required</span>
+                        </label>
+                        <div class="input-icons">
+                        <input id="lastName" type="text" 
+                                required name="lastName" 
+                                pattern="[A-Za-z]{2-20}"
+                                title="Last name is letters - space ' 
+                                only" placeholder="Last Name"
+                                oninput="checkName(this)">
+                            <i class="fa fa-user icon">
+                            </i>
+                        </div>
+
+                        <label for="email">Email
+                            <span class="required">Required</span>
+                        </label>
+                        <div class="input-icons">
+                        <input type="email" required name="email" id="email"
+                            placeholder="Email"
+                            oninput="checkEmail(this)"
+                            title="Must be a valid email."
+                            maxlength = "20" >
+                            <div id="email_error"></div>
+                            <i class="fa fa-envelope"></i>
+                            </div>
+
+
+                        <label for="phone">Phone
+                            <span class="required">Required</span>
+                        </label>
+                        <div class="input-icons">
+                        <input oninput="checkPhone(this)" type="tel" 
+                        name="phone" id="phone" required 
+                        placeholder="Phone">
+                        <i class="fa fa-phone"></i>
+                        </div>
+
+
+                        <label for="d_o_b">Date of birth
+                            <span class="required">Required</span>
+                        </label>
+                        <div class="input-icons">
+                        <input type="date"
+                        value="2020-01-01" 
+                        min="1900-01-01"
+                        max="2021-12-31"
+                        id="d_o_b" 
+                        name="d_o_b" 
+                        required
+                        oninput="checkDOB(this)">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+
+
+                        <label for="address">Address
+                            <span class="required">Required</span>
+                        </label>
+                        <div class="input-icons">
+                        <input  type="text" id="address" name="Address" required placeholder="Address">
+                        <i class="fa fa-road"></i>
+                    </div>
+
+                        <div class="last">
+                            <h4>Subscribe(optional):</h4>
+                            <input type="radio" class="radio__input1" id="radio1" value="Yes" name="radio">
+                            <label for="radio1" id="Yes" class="radio__label1">Yes</label>
+                            <input type="radio" class="radio__input2" id="radio2" value="No" name="radio">
+                            <label for="radio2" id="No" class="radio__label2">No</label>
+                        </div>
+
+                        <div class="full">
+                            <button id='#buttonregister'>Submit</button>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
