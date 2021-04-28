@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/fa42208476.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #phone:hover::before {
+        content: "\f2a0";
+    }
+    #load:active::before {
+        content: "\f019";
+    }
+    #input:i::before {
+        position: absolute;
+    }
+     
+</style>
+<body>
+    <div onclick="swapBoxes1()"id="one" style="background-color: red; height: 40px; width: 40px; border: solid black 1px;">Box One</div>
+    <div onclick="swapBoxes2()"id="two" style="background-color: green; height: 40px; width: 40px; border: solid black 1px;">Box Two</div>
+    <div onclick="swapBoxes3()"id="three" style="background-color: blue; height: 40px; width: 40px; border: solid black 1px;">Box Three</div>
+    <br>
+    <i id="phone" class="fas fa-phone-alt"></i>
+    <br>
+    <i id="load" class="fas fa-upload"></i>
+    <br>
+    <div class="input">
+    <input type="text">
+    <i id="phone2" class="fas fa-phone-alt"></i>
+    </div>  
+
+</body>
