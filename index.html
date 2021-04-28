@@ -4,22 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>WD3</title>
 </head>
+<header>
+    <h1>Paul Humphreys Engineering</h1>
+</header>
 <body>
-    <a href="AnnaLiaRose1.github.io">talia</a>
-    <a href="dhastaylor.github.io">dianna</a>
-    <a href="EmilyMeek.github.io">emily</a>
-    <a href="HBlomfield.github.io">i don't know</a>
-    <a href="lucasheydon.github.io">lucas hello</a>
-    <a href="Luigi3069.github.io">Cammo</a>
-    <a href="minmaem.github.io">minmae</a>
-    <a href="rebeccva.github.io">becE</a>
-    <a href="seph86.github.io">mitchM</a>
-    <a href="nimafaghihzadeh.github.io">nima</a>
-    <a href="BeccAYYY.github.io">beca</a>
-    <a href="Kaiabbey.github.io">kai</a>
-    <a href="cb91-dev.github.io">craig</a>
-    <a href="mooker97.github.io">mike</a>
+    <form>
+        <fieldset>
+            <div>
+                <label for="Fname">First Name:</label>   
+                <input type="text" id="firstname" name="firstname" placeholder="Enter Here" pattern="[a-zA-Z]{2,}" onkeyup="validation()">
+                <div id="errorFname" class="errorF"> Please Insert Name</div>
+            </div>
+            <div>
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter Here" pattern="[a-zA-Z]{2,}" onkeyup="validation1()">
+                <div id="errorLname" class="errorL"> Please Insert Name</div>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="emails" name="email" placeholder="Enter Here" pattern="[a-z0-9._%+-]{3,}@[a-z]{3,}([.]{1}[a-z]{2,}|[.]{1}[a-z]{2,}[.]{1}[a-z]{2,})" onkeyup="valadation2()">
+                <div id="erroremail" class="erroremail">Enter a Valid Email</div>
+            </div>
+            <div>
+                <label for="ContactInfo">Contact Information:</label>
+                <input type="text" id="ContactInfo" name="contact" placeholder="Enter Here" pattern="[0-9]{2,0}" onchange="valadation3()">
+                <div id="errorContactInfo" class="ContactInfo">Enter Valid Information</div>
+            </div>
+            <div>
+                <lable for="Button"></lable>
+                <input type="submit" id="Button" name="submit"onchange="valadation4()">
+                <div id="errorsubmit" class="Submit">Entered Values above are Incorrect</div>
+            </div>
+        </fieldset>
+    </form>
 </body>
+<footer>
+
+</footer>
 </html>
