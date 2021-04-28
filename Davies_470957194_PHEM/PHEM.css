@@ -1,0 +1,61 @@
+.box {
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+}
+
+#bone{
+    background-color: green;
+}
+
+#camera{
+    visibility: hidden;
+}
+
+#bone:hover #camera{
+    padding: .5em;
+    visibility: visible;
+}
+
+#btwo{
+    background-color: blue;
+}
+
+#wheelchair{
+    visibility: hidden;
+}
+
+#btwo:active #wheelchair{
+    padding: .5em;
+    visibility: visible;
+}
+
+#ET {
+  visibility: hidden;
+}
+#alien {
+  background-position: left center;
+  background-size: auto 100%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+#alien:checked + #ET {
+    visibility: visible;
+}
+
+.form{
+    position: relative;
+    width: 90%;
+}
+
+.form input{
+    display: block;
+    width: 100%;
+}
+
+.form i{
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
