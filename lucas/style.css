@@ -1,0 +1,44 @@
+.far.fa-arrow-alt-circle-right {
+    font-size: 100px;
+}
+.far.fa-arrow-alt-circle-right:hover:before {
+    content: "\f058";
+}
+.fab.fa-accessible-icon {
+    font-size: 100px;
+}
+.fab.fa-accessible-icon:active:before {
+    content: "\f641";
+}
+.far.fa-square {
+    font-size: 100px;
+}
+.far.fa-square:checked:after {
+    content: "\f14a";
+}
+#check {
+    display: none;
+}
+#check + .fa-square:before {
+    content: "\f0c8";
+}
+#check:checked + .fa-square:before {
+    content: "\f14a";
+}
+.fa-address-card {
+    font-size: 20px;
+}
+.input-icons {
+    width: 300px;
+    position: relative;
+}
+.icon {
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 7.5px;
+}  
+.input-field {
+    width: 100%;
+    height: 30px;
+}
