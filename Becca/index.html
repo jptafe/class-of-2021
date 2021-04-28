@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT3 Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <h1>PHEM</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div class="field">
+                    <label for="name">NAME</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="field">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="field">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" name="phone">
+                </div>
+                <div class="field">
+                    <label for="message">MESSAGE</label>
+                    <textarea name="message" id="message-box" cols="30" rows="10"></textarea>
+                </div>
+                <div class="mail-list">
+                    <label for="mail-list">Subscribe to the mailing list?</label>
+                    <input type="checkbox" name="mail-list" id="mail-list-box">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Stuff here for the footer</p>
+        <div id=stupidcheckbox>
+            <input type="checkbox" id="checkbox">
+            <i class="fas fa-paper-plane"></i>
+        </div>
+    </footer>
+</body>
+</html>
