@@ -1,0 +1,126 @@
+
+@media only screen and (min-width: 300px) {
+
+    input {
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 35em;
+        justify-self: center;
+        margin: 0.5em 0.25em;
+        grid-area: main;
+        margin: auto 0em;
+        position: relative;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline;
+    }
+
+    form {
+        margin: auto;
+    }
+
+    h1 {
+        margin-left: 3em;
+    }
+
+    button {
+        width: 10em;
+    }
+
+    input:focus {
+        background-color: lightpink;
+    }
+
+    fieldset {
+        color: blue;
+        margin: 0 5em;
+    }
+
+    legend {
+        color: blue;
+    }
+
+    .msg {
+        color: red;
+        justify-self: start;
+        display: none;
+        grid-area: sidebar;
+    }
+
+    input:invalid  {
+        border: solid 1px red;
+    }
+    
+    input:valid {
+        border: solid 1px green;
+    }
+
+    .box:invalid {
+        border: red 1px solid;
+    }
+    
+    .box:invalid:focus + .msg {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 10em 35em 5em;
+        grid-template-rows: auto;
+        grid-template-areas: 
+    "main main sidebar"
+    "footer footer .";
+        justify-items: center;
+        margin: 1.5em 0;
+    }
+
+    label:after {
+        display: block;
+        content: "Required";
+        color: red;
+    }
+
+    label {
+        justify-self: start;
+        grid-area: main;
+    }
+
+    button {
+        margin-top: 2em;
+    }
+
+    .button {
+        display: inline;
+        grid-area: footer;
+    }
+
+    video {
+        position: absolute;
+    }
+    
+    #video-button:hover ~ video {
+        display: none;
+        z-index: 1;
+    }
+
+    #test {
+        position: relative; 
+        width: 30em;
+        height: 30em;
+    }
+
+    .cls-2, .cls-3 {
+        color: red;
+    }
+
+    .cls-4 {
+        display: none;
+    }
+
+    img {
+        height: 400px;
+        width: 400px;
+    }
+}

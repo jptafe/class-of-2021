@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: grey;
+}
+header, footer {
+    background-color: #013542;
+    color: White;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+label {
+    font-size: 0.5em;
+}
+
+#checkbox {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+i {
+    z-index: 1;
+    position: absolute;
+}
+
+#checkbox:checked + i::before {
+    content: "\f007";
+    z-index: 1;
+}
+
+#stupidcheckbox {
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Forms</title>
+        <script src="js.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Web Form</h1>
+hello hi hello
+        <form>
+            <fieldset>
+                <legend>This is a form</legend>
+                    <div class="container">
+                        <label for="first"><abbr title="Please enter your first name.">First Name:</abbr></label>
+                        <input type="text"
+                                class="box"
+                                name="first"
+                                pattern="[A-Za-z]{2,}"
+                                maxlength="20"
+                                minlength="2"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must start with a capital letter.</div>
+                    </div>
+                    <div class="container">
+                        <label for="last"><abbr title="Please enter your last name.">Last Name:</abbr></label>
+                        <input type="text"
+                                class="box"
+                                name="last"
+                                pattern="[A-Za-z]{2,}"
+                                maxlength="30"
+                                minlength="2"
+                                title="123"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must start with a capital letter.</div>
+                    </div>
+                    <div class="container">
+                        <label for="email"><abbr title="Please enter your email address.">Email Address:</abbr></label>
+                        <input type="email"
+                                class="box"
+                                name="email"
+                                maxlength="30"
+                                minlength="2"
+                                title="123"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must be valid email address.</div>
+                    </div>
+                    <div class="container">
+                        <label for="date"><abbr title="Please enter your date of birth.">Date of Birth:</abbr></label>
+                        <input type="text"
+                                onfocus="(this.type='date')"
+                                onblur="(this.type='text')"
+                                class="box"
+                                name="date"
+                                min="1900-01-01"
+                                max="2021-01-01"
+                                title="123"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must be valid birthdate.</div>
+                    </div>
+                    <div class="container">
+                        <label for="phone" title="sfsdffs"><abbr title="Please enter your phone number.">Phone Number:</abbr></label>
+                        <input type="text"
+                                class="box"
+                                name="phone"
+                                pattern="[0-9]{10}"
+                                title="123"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must be 10 digits long.</div>
+                    </div>
+                    <div class="container">
+                        <label for="address1"><abbr title="Please enter the first line of your address.">Address Line 1:</abbr></label>
+                        <input type="text"
+                                class="box"
+                                name="address1"
+                                maxlength="40"
+                                minlength="2"
+                                title="123"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must be valid address.</div>
+                    </div>
+                    <div class="container">
+                        <label for="address2"><abbr title="Please enter the second line of your address.">Address Line 2:</abbr></label>
+                        <input type="text"
+                                class="box"
+                                id="address2"
+                                name="address2"
+                                maxlength="40"
+                                minlength="2"
+                                title="123"
+                                required
+                                onchange="validate(this)">
+                        <div class="msg">Must be valid address.</div>
+                    <div class="button">
+                        <button>Submit</button>
+                    </div>
+            </fieldset>
+        </form>
+        <div id="test">
+            <button id="video-button">Help</video></button>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </body>
+</html>
